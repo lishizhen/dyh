@@ -1,0 +1,272 @@
+body {
+	background: #F5F5F5;
+}
+.jd_topbar {
+	position: relative;
+}
+/*安全提示开始*/
+.jd_safeTip {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	background: #FFFFFF;
+	text-align: center;
+	border-bottom: 1px solid #E0E0E0;	
+}
+.jd_safeTip p {
+	display: inline-block;
+	color: #999;	
+	position: relative;
+	padding-left: 24px;
+}
+.jd_safeTip p::before {
+	position: absolute;
+	top: 7px;
+	left: 0;
+	content: "";
+	background: url(../img/safe_icon.png) no-repeat;
+	-webkit-background-size: 18px 18px;
+	background-size: 18px 18px;
+	display: block;
+	width: 18px;
+	height: 18px;	
+}
+/*安全提示结束*/
+/*店铺购物车开始*/
+.jd_shopBox {
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	border-top: 1px solid #E0E0E0;
+}
+.jd_shopBox_t {
+	height: 34px;
+	width: 100%;
+	line-height: 34px;
+	border-bottom: 1px solid #E0E0E0;
+}
+.top_check,.con_check {
+	position: absolute;
+	width: 40px;
+}
+.top_right {
+	width: 100%;
+	padding-left: 40px;
+}
+.top_right img {
+	width: 15px;
+	height: 13px;
+	float: left;
+	margin: 10px 2px 0 1px;
+}
+.top_right span.top_right_name {
+	font-size: 15px;
+	float: left;
+}
+.top_right span.top_right_tip {
+	float: right;
+	color: #C91523;
+	margin-right: 10px;
+}
+
+.jd_checkbox {
+	width: 20px;
+	height: 20px;
+	background: url(../img/shop-icon.png) no-repeat;
+	-webkit-background-size: 50px 100px;
+	background-size: 50px 100px;
+	display: block;	
+	margin: 7px 0 0 10px;
+}
+
+.jd_checkbox .top_check {
+	position: relative;
+}
+.jd_checkbox[checked] {
+	background-position: -25px 0;
+}
+.jd_shopBox_c {
+	background: #fff;
+	padding: 10px 0 10px 0;
+}
+.jd_shopBox_c_r {
+	padding-left: 45px;
+	overflow: hidden;
+}
+.jd_shopBox_c_r_l {
+	float: left;
+}
+.jd_shopBox_c_r_l  a {
+	display: block;
+	width: 80px;
+	height: 80px;
+}
+.jd_shopBox_c_r_l  a img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.jd_shopBox_c_r_r {
+	
+}
+.jd_shopBox_c_r_r_t {
+	line-height: 15px;
+	overflow: hidden;
+	height: 30px;
+	padding: 0 10px;
+}
+.jd_shopBox_c_r_r_c {
+	padding-left: 10px;
+	overflow: hidden;
+}
+.price {
+	color: #C91523;
+	margin: 5px 0;
+}
+.allbox_l {
+	float: left;
+	text-align: center;
+}
+.allbox_l span:first-child {
+	width: 32px;
+	height: 24px;
+	float: left;
+	border: 1px solid #E0E0E0;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;	
+}
+.allbox_l span:last-child {
+	width: 32px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+	float: left;
+}
+.allbox_l input {
+	width: 36px;
+	height: 24px;
+	text-align: center;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	float: left;
+}
+.allbox_r {
+	float: right;
+	margin-right: 10px;
+}
+.allbox_r .allbox_r_t {
+	display: block;
+	width: 20px;
+	height: 5px;
+	background: url(../img/delete_up.png) no-repeat;
+	-webkit-background-size: 20px 5px;
+	background-size: 20px 5px;
+}
+.allbox_r .allbox_r_b {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/delete_down.png) no-repeat;
+	-webkit-background-size: 18px 18px;
+	background-size: 18px 18px;
+	margin: -3px 0px 0 1px;
+}
+
+/*店铺购物车结束*/
+/*弹出层*/
+.jd_popwin {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+.jd_popwin_box {
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 75px;
+	background: #fff;
+	padding: 0 40px;
+	border: 1px solid #E0E0E0;
+	border-radius: 6px;
+	/*display: none;*/
+}					
+.jd_popwin_box .tips {
+	line-height: 75px;
+	text-align: center;
+	font-size: 18px;	
+	border-bottom: 1px solid #E0E0E0;
+}
+.jd_popwin_box .anniu {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.cancle {
+	width: 45%;
+	height: 36px;
+	float: left;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 16px;
+}
+.submit {
+	width: 45%;
+	height: 36px;
+	border: 1px solid #E0E0E0;
+	float: right;
+	background: #C91523;	
+	font-size: 16px;
+	color: #F5F5F5;
+	text-align: center;
+	line-height: 36px;
+	border-radius: 4px;
+}
+
+@keyframes jump{
+	0% {
+		opacity: 0;
+		transform:translateY(-600%);
+	}
+	65% {
+		opacity: 1;
+		transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+	}
+	75% {
+		transform: translateY(-10px);
+		-webkit-transform: translateY(-10px);
+	}
+	90% {
+		transform: translateY(5px);
+		-webkit-transform: translateY(5px);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+		-webkit-transform: none;
+	}
+}
+
+.jump {
+	animation: jump 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

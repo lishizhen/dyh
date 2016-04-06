@@ -1,0 +1,103 @@
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	/*清除默认高亮*/
+	-webkit-tap-highlight-color: transparent;
+	/*设置所以的宽度从border开始计算*/
+	-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	font-family: "microsoft yahei",sans-serif;
+}
+ul,ol {
+	list-style: none;
+}
+input,textarea {
+	border: 0;
+	resize: none;
+	outline: none;
+	/*针对ios浏览器清除默认样式*/
+	-webkit-appearance: none;
+}	
+a {
+	text-decoration: none;
+	color:#333;
+}
+/*清浮动*/
+.clearfix::before,
+.clearfix::after {
+	content:"";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility:hidden;
+	clear:both;	
+}
+.f_left {
+	float: left;
+}
+.f_right {
+	float:right
+}
+
+[class^="icon_"] {
+	background: url(../img/sprites.png);
+	-webkit-background-size: 200px 200px;
+	background-size: 200px 200px;
+}
+/*顶部通栏菜单*/
+.jd_topbar {
+	width: 100%;
+	height: 45px;
+	border: 1px solid #E0E0E0;
+	background:url(../img/header-bg.png) repeat-x;
+	-webkit-background-size: 1px 44px;
+	background-size: 1px 44px;
+	position: absolute;    
+}
+.jd_topbar form {
+	width: 100%;
+	height: 44px;
+    padding: 0 40px;
+}
+.jd_topbar form input {
+	width: 100%;
+	height: 32px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 6px;
+}
+.jd_topbar .icon_back {
+	width: 40px;
+	height: 44px;
+	position: absolute;
+	left: 0;
+	top:0;
+	background-position: -20px 0;
+	-webkit-background-position: -20px 0;
+	padding: 12px 10px;
+	background-clip: content-box;
+	background-origin:content-box;
+}
+.jd_topbar h2 {
+	font-weight: inherit;
+	font-size: 16px;
+	text-align: center;
+	line-height: 44px;
+}
+.jd_topbar .icon_menu {
+	width: 40px;
+	height: 44px;
+	position: absolute;
+	right: 0;
+	top:0;
+	background-position: -60px 0;
+	-webkit-background-position: -60px 0;
+	padding: 12px 10px;
+	background-clip: content-box;
+	background-origin:content-box;
+}

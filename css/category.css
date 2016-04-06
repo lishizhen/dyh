@@ -1,0 +1,133 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+/*顶部通栏菜单*/
+.jd_topbar {
+	width: 100%;
+	height: 45px;
+	border: 1px solid #E0E0E0;
+	background:url(../img/header-bg.png) repeat-x;
+	-webkit-background-size: 1px 44px;
+	background-size: 1px 44px;
+	position: absolute;    
+}
+.jd_topbar form {
+	width: 100%;
+	height: 44px;
+    padding: 0 40px;
+}
+.jd_topbar form input {
+	width: 100%;
+	height: 32px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 6px;
+}
+.jd_topbar .icon_back {
+	width: 40px;
+	height: 44px;
+	position: absolute;
+	left: 0;
+	top:0;
+	background-position: -20px 0;
+	-webkit-background-position: -20px 0;
+	padding: 12px 10px;
+	background-clip: content-box;
+	background-origin:content-box;
+}
+.jd_topbar .icon_menu {
+	width: 40px;
+	height: 44px;
+	position: absolute;
+	right: 0;
+	top:0;
+	background-position: -60px 0;
+	-webkit-background-position: -60px 0;
+	padding: 12px 10px;
+	background-clip: content-box;
+	background-origin:content-box;
+}
+
+/*分类大盒子开始*/
+.jd_category {
+	width: 100%;
+	height: 100%;
+	padding-top: 45px;
+}
+
+.jd_category_l {
+	width: 90px;
+	height: 100%;	
+	overflow: hidden;
+	text-align: center;
+	background: #CCCCCC;
+	float: left;
+}
+.jd_category_l ul li {
+	height: 50px;
+	width: 90px;
+	border-right: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	text-align: center;
+	line-height: 50px;
+	background: #f3f4f6;
+}
+.jd_category_l ul li.now {
+	background: #fff;
+	border-right: none;	
+}
+.jd_category_l ul li.now a {
+	color: #C91523;
+}
+.jd_category_l ul li a {
+	font-family: "microsoft sans serif";
+	display: block;
+}
+
+/*当盒子定义了overflow:hidden后就不会和外界的任何盒子有干扰，自身变成伸缩的盒子，铺满自己的空间*/
+.jd_category_r {
+	overflow: hidden;
+	height: 100%;	
+	padding: 10px 12px;
+}
+.jd_category_r_con {
+	width: 100%;
+	
+}
+.category_flbanner {
+	width: 100%;
+	display: block;
+	
+}
+.category_flbanner img {
+	display: block;
+	width: 100%;
+}
+.category_box h3 {
+	font-size: 12px;
+	color: #888;
+	margin: 10px 0;	
+}
+.category_box ul li {
+	float: left;
+	width: 33.333%;
+}
+.category_box ul li a {
+	width: 100%;
+	display: block;
+}
+.category_box ul li a img {
+	width: 62px;
+	height: 62px;
+	margin: 0 auto;
+	display: block;	
+}
+.category_box ul li a p {
+	text-align: center;
+	color: #666666;
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+
